@@ -1,7 +1,6 @@
 
 ---
 
-
 # Introducción a QA y Git
 
 
