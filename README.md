@@ -1,8 +1,6 @@
 
 ---
-
 <center><img src="clases/img/intro_qagit.jpg" alt="Introducción a QA y Git" width="600"/></center>
-
 
 # Introducción a QA y Git
 
