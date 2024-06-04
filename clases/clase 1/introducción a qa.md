@@ -1,6 +1,3 @@
-Entendido, aquí está el contenido en lenguaje Markdown:
-
----
 
 # Introducción a QA y Git
 
