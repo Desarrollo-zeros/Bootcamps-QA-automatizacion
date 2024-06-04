@@ -4,7 +4,7 @@ Entendido, aquí está el contenido en lenguaje Markdown:
 
 # Introducción a QA y Git
 
-<center><img src="/clases/img/intro_qagit.jpg" alt="Introducción a QA y Git" width="600"/></center>
+<center><img src="../img/intro_qagit.jpg" alt="Introducción a QA y Git" width="600"/></center>
 
 ## Conceptos básicos de QA
 
