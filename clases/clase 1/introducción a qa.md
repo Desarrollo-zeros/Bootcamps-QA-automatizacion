@@ -130,5 +130,5 @@ En un equipo de desarrollo de software, existen varios roles dentro del QA, cada
 - **Capacitación continua**: Mantener al equipo de QA actualizado con las últimas herramientas y técnicas.
 
 ### Conclusión
+
 El QA es una parte fundamental del desarrollo de software que garantiza la calidad, la satisfacción del cliente y la eficiencia operativa. Implementar procesos de QA robustos y automatizar tanto como sea posible permite a las organizaciones entregar productos de alta calidad de manera consistente.
----

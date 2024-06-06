@@ -7,10 +7,12 @@ Los requisitos funcionales describen lo que el sistema debe hacer. Estos especif
 Ejemplos de Requisitos Funcionales:
 
 **Inicio de Sesión**:
+    
     - El sistema debe permitir que los usuarios inicien sesión con un nombre de usuario y una contraseña válidos.
     - El sistema debe enviar un mensaje de error si las credenciales de inicio de sesión son incorrectas.
 
 **Registro de Usuarios**:
+    
     - El sistema debe permitir a los nuevos usuarios registrarse proporcionando su nombre, dirección de correo electrónico y contraseña.
     - El sistema debe enviar un correo electrónico de confirmación después del registro.
 
@@ -177,58 +179,97 @@ Los requisitos no funcionales se pueden medir mediante pruebas de rendimiento, s
 1. **Pregunta**: Basado en el caso de estudio anterior, ¿qué pasos incluirías en la planificación de pruebas para la funcionalidad de inicio de sesión?
 - Respuesta: [Escribe tu respuesta aquí]
 
-### Ejercicio 7: Diseño de Casos de Prueba
-1. **Formulario HTML**: Crea un formulario para documentar casos de prueba.
-```html
-<form action="/submit_test_case" method="post">
-    <label for="test_case_id">ID del Caso de Prueba:</label><br>
-    <input type="text" id="test_case_id" name="test_case_id"><br>
-    <label for="test_case_description">Descripción del Caso de Prueba:</label><br>
-    <textarea id="test_case_description" name="test_case_description"></textarea><br>
-    <label for="expected_result">Resultado Esperado:</label><br>
-    <textarea id="expected_result" name="expected_result"></textarea><br>
-    <input type="submit" value="Enviar">
-</form>
-```
 
-### Ejercicio 8: Ejecución de Pruebas
+### Ejercicio 7: Ejecución de Pruebas
 1. **Pregunta**: Describe cómo ejecutarías los casos de prueba para la funcionalidad de inicio de sesión. Incluye cómo documentarías los resultados.
 - Respuesta: [Escribe tu respuesta aquí]
 
-###  Ejercicio 9: Reporte y Seguimiento de Defectos
-1. **Formulario HTML**: Crea un formulario para reportar y hacer seguimiento de defectos encontrados durante las pruebas.
-```html
-<form action="/submit_bug_report" method="post">
-    <label for="bug_id">ID del Defecto:</label><br>
-    <input type="text" id="bug_id" name="bug_id"><br>
-    <label for="bug_description">Descripción del Defecto:</label><br>
-    <textarea id="bug_description" name="bug_description"></textarea><br>
-    <label for="severity">Severidad:</label><br>
-    <select id="severity" name="severity">
-        <option value="low">Baja</option>
-        <option value="medium">Media</option>
-        <option value="high">Alta</option>
-    </select><br>
-    <input type="submit" value="Enviar">
-</form>
-```
+### Ejercicio 8: Registro en Facebook
 
-### Ejercicio 10: Documentación de Pruebas
+**Objetivo**: Probar la funcionalidad de registro en Facebook.
 
-1. **Formulario HTML**: Crea un formulario para documentar los resultados de las pruebas ejecutadas.
-```html
-<form action="/submit_test_results" method="post">
-    <label for="test_case_id">ID del Caso de Prueba:</label><br>
-    <input type="text" id="test_case_id" name="test_case_id"><br>
-    <label for="execution_date">Fecha de Ejecución:</label><br>
-    <input type="date" id="execution_date" name="execution_date"><br>
-    <label for="test_results">Resultados de la Prueba:</label><br>
-    <textarea id="test_results" name="test_results"></textarea><br>
-    <label for="status">Estado:</label><br>
-    <select id="status" name="status">
-        <option value="pass">Pasó</option>
-        <option value="fail">Falló</option>
-    </select><br>
-    <input type="submit" value="Enviar">
-</form>
-```
+1. **Actividad**:
+   - Crear un caso de prueba para la funcionalidad de registro en Facebook.
+   - Identificar al menos 3 condiciones de prueba:
+      - Registro con todos los campos correctos.
+      - Registro con un correo electrónico ya existente.
+      - Registro sin aceptar los términos y condiciones.
+   - Documentar cada condición de prueba, incluyendo ID del caso, descripción, precondiciones, pasos y resultado esperado.
+
+**Ejemplo**:
+- **ID del Caso de Prueba**: FB001
+- **Descripción**: Verificar que el usuario puede registrarse con todos los campos correctos.
+- **Precondiciones**: El usuario está en la página de registro de Facebook.
+- **Pasos**:
+   1. Ingresar "Juan" en el campo "Nombre".
+   2. Ingresar "Pérez" en el campo "Apellido".
+   3. Ingresar "juan.perez@example.com" en el campo "Correo Electrónico".
+   4. Ingresar "password123" en el campo "Contraseña".
+   5. Hacer clic en "Registrarse".
+- **Resultado Esperado**: El usuario es registrado correctamente y redirigido a su perfil.
+
+Nota: Tomar evidencias y/o fotos del proceso
+
+### Ejercicio 9: Registro en DevZeros School
+
+**Objetivo**: Probar la funcionalidad de registro en DevZeros School.
+
+1. **Actividad**:
+   - Crear un caso de prueba para la funcionalidad de registro en DevZeros School.
+   - Identificar al menos 3 condiciones de prueba:
+      - Registro con todos los campos correctos.
+      - Registro con un correo electrónico inválido.
+      - Registro con una contraseña débil.
+   - Documentar cada condición de prueba, incluyendo ID del caso, descripción, precondiciones, pasos y resultado esperado.
+
+**Ejemplo**:
+- **ID del Caso de Prueba**: DZ001
+- **Descripción**: Verificar que el usuario puede registrarse con todos los campos correctos en DevZeros School.
+- **Precondiciones**: El usuario está en la página de registro de DevZeros School.
+- **Pasos**:
+   1. Seleccionar "Estudiante" en "Tipo de cuenta".
+   2. Ingresar "estudiante@example.com" en el campo "Correo Electrónico".
+   3. Seleccionar "USA" en el campo "País".
+   4. Ingresar "1234567890" en el campo "Teléfono".
+   5. Ingresar "Estudiante Ejemplo" en el campo "Nombre Completo".
+   6. Ingresar "contraseñaFuerte123" en el campo "Contraseña".
+   7. Ingresar "contraseñaFuerte123" en el campo "Vuelva a escribir la contraseña".
+   8. Aceptar los términos y condiciones.
+   9. Hacer clic en "Registrarse".
+- **Resultado Esperado**: El usuario es registrado correctamente y recibe un correo de confirmación.
+
+Nota: Tomar evidencias y/o fotos del proceso
+
+### Ejercicio 10: Documentar Defectos en Trello
+
+**Objetivo**: Documentar defectos encontrados durante las pruebas en Trello.
+
+1. **Actividad**:
+   - Crear 4 tarjetas en un tablero de Trello para documentar los defectos encontrados en las plataformas probadas (Facebook y DevZeros School).
+   - Para cada defecto, incluir:
+      - Título de la tarjeta.
+      - Descripción detallada del defecto.
+      - Severidad del defecto.
+      - Pasos para reproducir el defecto.
+      - Resultado esperado y resultado observado.
+
+**Ejemplo de una tarjeta en Trello**:
+- **Título**: Defecto: Registro con correo existente en Facebook
+- **Descripción**:
+   - **ID del Defecto**: FB_DEF001
+   - **Descripción**: El sistema permite registrar un correo electrónico que ya está en uso sin mostrar un mensaje de error adecuado.
+   - **Severidad**: Alta
+   - **Pasos para Reproducir**:
+      1. Ir a la página de registro de Facebook.
+      2. Ingresar "correo_existente@example.com" en el campo "Correo Electrónico".
+      3. Completar el resto de los campos con datos válidos.
+      4. Hacer clic en "Registrarse".
+   - **Resultado Esperado**: El sistema debe mostrar un mensaje de error indicando que el correo electrónico ya está en uso.
+   - **Resultado Observado**: El sistema permite el registro sin mostrar ningún mensaje de error, lo que genera problemas de duplicidad de cuentas.
+
+**Instrucciones de la actividad**:
+- Crear un tablero en Trello.
+- Crear 4 tarjetas para documentar los defectos.
+- Completar cada tarjeta con la información detallada del defecto.
+- Asignar una etiqueta de severidad a cada tarjeta (Baja, Media, Alta).
+  Nota: Tomar evidencias y/o fotos del proceso
