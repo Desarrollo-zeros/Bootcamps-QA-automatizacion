@@ -193,7 +193,6 @@ Los requisitos no funcionales se pueden medir mediante pruebas de rendimiento, s
    - Identificar al menos 3 condiciones de prueba:
       - Registro con todos los campos correctos.
       - Registro con un correo electrónico ya existente.
-      - Registro sin aceptar los términos y condiciones.
    - Documentar cada condición de prueba, incluyendo ID del caso, descripción, precondiciones, pasos y resultado esperado.
 
 **Ejemplo**:
