@@ -190,7 +190,7 @@ Los requisitos no funcionales se pueden medir mediante pruebas de rendimiento, s
 
 1. **Actividad**:
    - Crear un caso de prueba para la funcionalidad de registro en Facebook.
-   - Identificar al menos 3 condiciones de prueba:
+   - Identificar al menos 2 condiciones de prueba:
       - Registro con todos los campos correctos.
       - Registro con un correo electrónico ya existente.
    - Documentar cada condición de prueba, incluyendo ID del caso, descripción, precondiciones, pasos y resultado esperado.
