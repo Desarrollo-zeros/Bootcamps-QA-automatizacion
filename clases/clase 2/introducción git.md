@@ -4,7 +4,7 @@
 Git es un sistema de control de versiones distribuido, diseñado para manejar proyectos con velocidad y eficiencia. Es usado ampliamente en el desarrollo de software para rastrear cambios en el código fuente y facilitar la colaboración entre múltiples desarrolladores.
 
 
-<center><img src="https://edteam-media.s3.amazonaws.com/community/original/e6236910-e173-4c44-9b0e-f984900e30a5.jpg" alt="Introducción a QA y Git" width="600"/></center>
+<center><img src="e6236910-e173-4c44-9b0e-f984900e30a5.jpg" alt="Introducción a QA y Git" width="600"/></center>
 
 
 ---
