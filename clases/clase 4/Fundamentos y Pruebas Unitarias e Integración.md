@@ -68,6 +68,7 @@ cd proyecto-testunit-qa
 npm init -y
 ```
 
+
 ### 2. Instalación de Dependencias
 
 - Instalar Jest para pruebas unitarias.
@@ -89,6 +90,31 @@ npm install --save-dev mocha chai
 npm install --save-dev cypress
 ```
 
+
+## NOTA:
+
+La elección entre Mocha/Chai y Jest para pruebas en JavaScript depende de varios factores como la configuración del proyecto, las necesidades específicas de pruebas, y las preferencias personales o del equipo. Aquí te ofrezco una comparación para ayudarte a decidir cuándo usar cada uno:
+
+Mocha/Chai
+Mocha es un marco de pruebas flexible que se puede combinar con varias bibliotecas de aserciones como Chai, Sinon, y Should.js. Esto proporciona una gran flexibilidad para configurar el entorno de pruebas según las necesidades específicas.
+
+Cuándo usar Mocha/Chai:
+
+Flexibilidad en la Configuración: Si necesitas un entorno de pruebas altamente personalizable donde puedas elegir entre diferentes bibliotecas de aserciones, espías, y simulacros (mocks), Mocha es una excelente opción.
+Proyectos de Larga Escala: En proyectos complejos donde diferentes partes del código requieren diferentes tipos de pruebas (unitarias, integración, etc.), Mocha se adapta bien gracias a su naturaleza agnóstica y modular.
+Combinación con Otras Herramientas: Si ya estás usando herramientas como Sinon para espiar o sustituir funciones y Chai para aserciones más descriptivas, integrar Mocha en el flujo de trabajo puede ser más efectivo.
+Jest
+Jest, desarrollado por Facebook, es una solución de pruebas "todo en uno" que se ha popularizado, especialmente en proyectos que utilizan React y otras tecnologías modernas de JavaScript.
+
+Cuándo usar Jest:
+
+Configuración Mínima: Jest viene preconfigurado para trabajar fuera de la caja, lo que lo hace ideal para proyectos que quieren implementar pruebas rápidamente sin mucha configuración.
+Proyectos React: Jest es ampliamente usado en la comunidad React debido a su integración fácil y características como el "snapshot testing" que es útil para componentes de UI.
+Entorno Aislado: Jest corre las pruebas en paralelo en procesos separados, lo que lo hace muy rápido y asegura que las pruebas no tengan efectos secundarios entre ellas.
+Mocking Extensivo: Jest tiene capacidades de simulacro (mocking) y espiado integradas que son fáciles de usar, facilitando las pruebas de módulos o APIs.
+Resumen
+Usa Mocha/Chai si: buscas flexibilidad y no te importa configurar tu entorno de pruebas con diferentes herramientas para adaptarlo a tus necesidades específicas.
+Usa Jest si: prefieres una solución integral que funcione bien con poco esfuerzo inicial de configuración, especialmente si trabajas con React o si valoras un entorno de pruebas aislado y eficiente.
 
 ### Ejemplo de Estructura de Proyecto
 Estructura de Directorios
