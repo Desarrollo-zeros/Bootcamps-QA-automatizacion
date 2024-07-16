@@ -46,9 +46,9 @@ Ejemplo de mensaje:
 
 ```bash
 
-PS C:\Users\carlo\Documents\Bootcamps-QA-automatizacion\clases\clase 4\proyecto-qa> npm run test:jest
+PS C:\Users\carlo\Documents\Bootcamps-QA-automatizacion\clases\clase 4\proyecto-testunit-qa> npm run test:jest
 
-> proyecto-qa@1.0.0 test:jest
+> proyecto-testunit-qa@1.0.0 test:jest
 > jest tests/jest
 
  PASS  tests/jest/divide.test.js
@@ -113,9 +113,9 @@ npm run test:mocha
 Ejemplo de mensaje:
 
 ```bash
-PS C:\Users\carlo\Documents\Bootcamps-QA-automatizacion\clases\clase 4\proyecto-qa> npm run test:mocha
+PS C:\Users\carlo\Documents\Bootcamps-QA-automatizacion\clases\clase 4\proyecto-testunit-qa> npm run test:mocha
 
-> proyecto-qa@1.0.0 test:mocha
+> proyecto-testunit-qa@1.0.0 test:mocha
 > mocha tests/mocha/*.test.js
 
 

@@ -58,8 +58,8 @@ npm -v
 - Crear un nuevo directorio para el proyecto.
 
 ```bash
-mkdir proyecto-qa
-cd proyecto-qa
+mkdir proyecto-testunit-qa
+cd proyecto-testunit-qa
 ```
 
 - Inicializar un proyecto Node.js.
@@ -94,7 +94,7 @@ npm install --save-dev cypress
 Estructura de Directorios
 
 ```bash
-proyecto-qa/
+proyecto-testunit-qa/
 ├── node_modules/
 ├── package.json
 ├── package-lock.json
@@ -118,7 +118,7 @@ proyecto-qa/
 ```json
 
 {
-  "name": "proyecto-qa",
+  "name": "proyecto-testunit-qa",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
