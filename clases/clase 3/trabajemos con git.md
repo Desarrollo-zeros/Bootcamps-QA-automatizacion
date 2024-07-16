@@ -72,6 +72,7 @@ Después de instalar Git, es importante configurarlo con tu información persona
 
 1. Añadir archivos al área de Staging:
 ```bash
+git init
 git add .
 ```
 2. Hacer el commit inicial:

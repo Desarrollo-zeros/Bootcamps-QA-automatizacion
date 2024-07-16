@@ -1,150 +1,143 @@
-## Preparación del Entorno
+# Introducción a QA
+
+**Objetivo**:
+Proveer una visión general sobre QA (Quality Assurance), resaltando su importancia en el desarrollo de software y presentando los diferentes tipos de pruebas automáticas.
+
+**Contenido**:
+
+### 1: Definición y Importancia de QA
+
+- **Concepto de QA**: QA es el proceso sistemático de verificar y validar que el software cumple con los requisitos y expectativas especificadas.
+
+- **Diferencia entre QA y Testing**: QA se enfoca en la prevención de defectos durante el desarrollo, mientras que el Testing se centra en la identificación de defectos en el software ya desarrollado.
+
+### 2: Tipos de Pruebas Automáticas
+
+- **Pruebas Unitarias**: Verifican el funcionamiento de componentes individuales o unidades del código (e.g., funciones, métodos).
+- **Pruebas de Integración**: Aseguran que diferentes módulos o servicios del sistema funcionan correctamente cuando se combinan.
+- **Pruebas Funcionales**: Evalúan el sistema en su totalidad para garantizar que cumple con los requisitos funcionales especificados por el usuario.
 
 
-## Introducción
+### 3: Beneficios de las Pruebas Automáticas
 
-Git es un sistema de control de versiones distribuido, diseñado para manejar proyectos con velocidad y eficiencia. Es usado ampliamente en el desarrollo de software para rastrear cambios en el código fuente y facilitar la colaboración entre múltiples desarrolladores.
+- **Eficiencia y Velocidad**: Las pruebas automáticas pueden ejecutarse rápidamente y repetidamente sin intervención manual.
+- **Cobertura Amplia**: Permiten cubrir más escenarios de prueba que las pruebas manuales.
+- **Consistencia**: Reducen el riesgo de errores humanos y proporcionan resultados consistentes.
+- **Costo-efectividad**: A largo plazo, las pruebas automáticas pueden reducir los costos asociados con la detección y corrección de errores.
 
 
----
 
-## 1. Instalación de Git
+## Instalación de Node.js
 
-### Para instalar Git, sigue estos pasos dependiendo de tu sistema operativo:
 
-### Windows
-1. Descarga el instalador desde [git-scm.com](https://git-scm.com/download/win).
-2. Ejecuta el instalador y sigue las instrucciones del asistente.
-3. Para verificar la instalación, abre `Git Bash` y escribe:
-    ```bash
-    git --version
-    ```
+**Objetivo**: Instalar Node.js y configurar el entorno de desarrollo para trabajar con JavaScript y Node.js.
 
-### macOS
-1. Abre `Terminal`.
-2. Escribe el siguiente comando:
-    ```bash
-    brew install git
-    ```
-   (Necesitas tener Homebrew instalado. Si no lo tienes, puedes instalarlo desde [brew.sh](https://brew.sh/)).
+Contenido:
 
-### Linux
-1. Abre tu terminal.
-2. Escribe el siguiente comando (dependiendo de tu distribución):
-    ```bash
-    sudo apt-get install git        # Debian/Ubuntu
-    sudo yum install git            # CentOS/RHEL
-    sudo dnf install git            # Fedora
-    ```
+### 1. Descargar Node.js
 
----
+- Sitio Web Oficial: Ir a [odejs.org.](https://nodejs.org/)
+- Versiones Disponibles: Generalmente, se recomienda instalar la versión LTS (Long Term Support) para mayor estabilidad.
+Instalación en Windows
 
-## 2. Configuración Inicial
+### 2. Descargar el instalador desde la página oficial.
 
-Después de instalar Git, es importante configurarlo con tu información personal:
+- Ejecutar el instalador y seguir las instrucciones del asistente de instalación.
+- Verificar la instalación abriendo una terminal (CMD) y ejecutando:
 
-1. Configura tu nombre de usuario:
-    ```bash
-    git config --global user.name "Tu Nombre"
-    ```
-
-2. Configura tu correo electrónico:
-    ```bash
-    git config --global user.email "tuemail@ejemplo.com"
-    ```
-
-3. Verifica tu configuración:
-    ```bash
-    git config --list
-    ```
-
-## 3. Estructura del Proyecto
-```
-   /test1
-   |-- db.sql
-   |-- index.html
-   |-- scripts.js
-   |-- styles.css
-   |-- submit.php
-```
-
-## 4. Primer Commit
-
-1. Añadir archivos al área de Staging:
-```bash
-git init
-git add .
-```
-2. Hacer el commit inicial:
-```bash
-git commit -m "Commit inicial con la estructura básica del proyecto"
-```
-
-### 5. Trabajando con Ramas
-
-1. Crear una nueva rama:
 
 ```bash
-git branch nueva-funcionalidad
-```
-2. Cambiar a la nueva rama:
-```bash
-git checkout nueva-funcionalidad
+node -v
+npm -v
 ```
 
-3. Realizar cambios en la nueva rama:
-       
-   - Edita index.html y añade una nueva sección:
-   ```html
-   <section>
-     <h2>Nueva Funcionalidad</h2>
-     <p>Descripción de la nueva funcionalidad.</p>
-   </section>
-   ```
 
-4. Añadir y confirmar los cambios:
-```bash
-git add index.html
-git commit -m "Añadida nueva sección en index.html"
-```
+## Configuración del Entorno de Desarrollo
+### 1. Inicializar un Proyecto Node.js
 
-## 6. Fusionar Cambios
-
-1. Volver a la rama principal:
+- Crear un nuevo directorio para el proyecto.
 
 ```bash
-git checkout main
+mkdir proyecto-qa
+cd proyecto-qa
 ```
 
-2. Fusionar la nueva rama con la rama principal:
-```bash
-git merge nueva-funcionalidad
-```
-
-## 7. Trabajo Remoto
-
-1. Añadir un remoto:
+- Inicializar un proyecto Node.js.
 
 ```bash
-   git remote add origin <url-del-repositorio>
+npm init -y
 ```
 
-2. Enviar cambios al remoto:
+### 2. Instalación de Dependencias
+
+- Instalar Jest para pruebas unitarias.
+
+ 
 ```bash
-   git push origin main
+npm install --save-dev jest
 ```
 
-## 8. Prácticas Recomendadas
+- Instalar Mocha y Chai para pruebas de integración.
 
-- Commits Frecuentes: Realiza commits frecuentemente para mantener un historial claro.
-- Mensajes de Commit Descriptivos: Usa mensajes descriptivos para facilitar el seguimiento de cambios.
-- Uso de Ramas: Utiliza ramas para trabajar en nuevas características o arreglos sin afectar la rama principal.
-- Sincronización Frecuente: Sincroniza tus cambios frecuentemente con el repositorio remoto para evitar conflictos.
+```bash
+npm install --save-dev mocha chai
+```
+
+- Instalar Cypress para pruebas funcionales.
+
+```bash
+npm install --save-dev cypress
+```
 
 
+### Ejemplo de Estructura de Proyecto
+Estructura de Directorios
+
+```bash
+proyecto-qa/
+├── node_modules/
+├── package.json
+├── package-lock.json
+├── suma.js
+├── resta.js
+├── divide.js
+├── tests/
+│   ├── jest/
+│   │   ├── suma.test.js
+│   │   ├── resta.test.js
+│   ├── mocha/
+│   │   ├── divide.test.js
+├── cypress/
+│   ├── integration/
+│   │   └── example_spec.js
+```
+
+### Scripts en package.json
 
 
+```json
 
+{
+  "name": "proyecto-qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest",
+    "test:integration": "mocha tests/*.test.js",
+    "test:functional": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mocha": "^10.6.0",
+    "chai": "^5.1.1",
+    "cypress": "^13.13.0"
+  }
+}
 
+```
 
 
