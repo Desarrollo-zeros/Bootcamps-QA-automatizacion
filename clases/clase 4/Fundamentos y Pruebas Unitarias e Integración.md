@@ -36,7 +36,7 @@ Contenido:
 
 ### 1. Descargar Node.js
 
-- Sitio Web Oficial: Ir a [odejs.org.](https://nodejs.org/)
+- Sitio Web Oficial: Ir a [nodejs.org.](https://nodejs.org/)
 - Versiones Disponibles: Generalmente, se recomienda instalar la versión LTS (Long Term Support) para mayor estabilidad.
 Instalación en Windows
 
