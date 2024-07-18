@@ -5,7 +5,7 @@
 ```json
 {   
   "scripts": {
-    "test:jest": "jest"
+    "test:jest": "jest tests/jest"
   }
 }
 ```
@@ -71,7 +71,7 @@ Ran all test suites matching /tests\\jest/i
 ```json
 {   
   "scripts": {
-    "test:mocha": "mocha"
+    "test:mocha": "mocha tests/mocha/*.test.js"
   }
 }
 ```
@@ -89,16 +89,14 @@ module.exports = resta;
 2. tests/mocha/resta.test.js:
 
 ```javascript
-const resta = require('../../resta');
-const chai = require('chai');
-const expect = chai.expect;
-
 describe('Pruebas Unitarias para la función resta', () => {
-    it('resta 5 - 3 para igualar 2', () => {
+    it('resta 5 - 3 para igualar 2', async () => {
+        const { expect } = await import('chai');
         expect(resta(5, 3)).to.equal(2);
     });
 
-    it('resta -1 - -1 para igualar 0', () => {
+    it('resta -1 - -1 para igualar 0', async () => {
+        const { expect } = await import('chai');
         expect(resta(-1, -1)).to.equal(0);
     });
 });
@@ -109,7 +107,6 @@ describe('Pruebas Unitarias para la función resta', () => {
 npm run test:mocha
 
 ```
-
 Ejemplo de mensaje:
 
 ```bash

@@ -123,7 +123,6 @@ Estructura de Directorios
 proyecto-testunit-qa/
 ├── node_modules/
 ├── package.json
-├── package-lock.json
 ├── suma.js
 ├── resta.js
 ├── divide.js
@@ -133,9 +132,6 @@ proyecto-testunit-qa/
 │   │   ├── resta.test.js
 │   ├── mocha/
 │   │   ├── divide.test.js
-├── cypress/
-│   ├── integration/
-│   │   └── example_spec.js
 ```
 
 ### Scripts en package.json
@@ -149,21 +145,18 @@ proyecto-testunit-qa/
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:unit": "jest",
-    "test:integration": "mocha tests/*.test.js",
-    "test:functional": "cypress open"
+    "test:jest": "jest tests/jest",
+    "test:mocha": "mocha tests/mocha/*.test.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^29.7.0",
-    "mocha": "^10.6.0",
     "chai": "^5.1.1",
-    "cypress": "^13.13.0"
+    "cypress": "^13.13.0",
+    "jest": "^29.7.0",
+    "mocha": "^10.6.0"
   }
 }
-
 ```
 
 
