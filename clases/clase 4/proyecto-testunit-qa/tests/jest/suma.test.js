@@ -1,6 +1,5 @@
 // tests/jest/suma.test.js
 const suma = require('../../suma');
-
 /**
  * TÍTULO: Suma de números
  * HISTORIA DE USUARIO:
@@ -27,7 +26,14 @@ const suma = require('../../suma');
  */
 test('suma 1 + 2 para igualar 3', () => {
     expect(suma(1, 2)).toBe(3);
+
 });
 test('suma -1 + -1 para igualar -2', () => {
     expect(suma(-1, -1)).toBe(-2);
+});
+
+test('Validar campos erroneos', () => {
+    expect(() => {
+        suma(undefined, 2)
+    }).toThrow("Error valor undefined");
 });

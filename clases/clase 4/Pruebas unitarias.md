@@ -190,7 +190,6 @@ function esPalindromo(texto) {
     const textoNormalizado = texto.replace(/\W/g, '').toLowerCase();
     return textoNormalizado === textoNormalizado.split('').reverse().join('');
 }
-
 // Uso de la función:
 console.log(esPalindromo("Anita lava la tina"));  // true
 
