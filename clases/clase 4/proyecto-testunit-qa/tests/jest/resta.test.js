@@ -1,5 +1,5 @@
 // tests/jest/resta.test.js
-const resta = require('../../resta');
+const resta = require('../../testunit/resta');
 
 /**
  * TÍTULO: Resta de números

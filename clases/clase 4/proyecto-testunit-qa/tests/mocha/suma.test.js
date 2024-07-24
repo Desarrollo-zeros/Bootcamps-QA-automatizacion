@@ -1,5 +1,5 @@
 // tests/mocha/suma.test.js
-const suma = require('../../suma');
+const suma = require('../../testunit/suma');
 
 /**
  * TÍTULO: Suma de números en Mocha

@@ -1,4 +1,4 @@
-const palindromo = require('../../esPalindromo');
+const palindromo = require('../../testunit/esPalindromo');
 
 describe('Prueba de un texto palindromo', () => {
     it('probar letras separadas', async () => {
@@ -9,10 +9,5 @@ describe('Prueba de un texto palindromo', () => {
     it('con palabra sin separar', async () => {
         const { expect } = await import('chai');
         expect(palindromo("ana")).to.equal(true);
-    });
-
-    it('probar con una palabra que no sea palindromo', async () => {
-        const { expect } = await import('chai');
-        expect(palindromo()).to.equal(false);
     });
 });

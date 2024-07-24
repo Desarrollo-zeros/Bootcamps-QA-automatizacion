@@ -1,5 +1,5 @@
 // tests/mocha/divide.test.js
-const divide = require('../../divide');
+const divide = require('../../testunit/divide');
 
 /**
  * TÍTULO: División de números en Mocha
