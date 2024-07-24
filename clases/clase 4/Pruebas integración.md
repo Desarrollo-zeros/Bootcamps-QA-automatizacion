@@ -239,7 +239,7 @@ module.exports = router;
 
 luego creamos las siguientes pruebas en 
 
-test/jesst/flightController.test.js
+test/jest/flightController.test.js
 
 ```javascript
 
