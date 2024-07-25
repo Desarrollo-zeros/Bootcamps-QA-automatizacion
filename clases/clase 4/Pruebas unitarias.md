@@ -1,4 +1,4 @@
-## Pruebas Unitarias con Jest
+https://jestjs.io/docs/## Pruebas Unitarias con Jest
 
 ### Configuración de Jest:
 - Agrega scripts para ejecutar Jest en package.json:
@@ -9,7 +9,7 @@
   }
 }
 ```
-
+https://jestjs.io/docs/
 ### Escritura de Pruebas con Jest:
 
 
@@ -515,7 +515,7 @@ describe('Validación del formulario de usuario', () => {
 
 ```javascript
 // tests/mocha/userForm.test.js
-const { expect } = require('chai');
+
 const validateUserForm = require('../../validateUserForm');
 
 /**
@@ -532,12 +532,14 @@ const validateUserForm = require('../../validateUserForm');
  */
 
 describe('Validación del formulario de usuario', () => {
-    it('debe validar correctamente un usuario con datos válidos', () => {
+    it('debe validar correctamente un usuario con datos válidos', async() => {
+        const { expect } = await import('chai');
         const result = validateUserForm(userDataValid);
         expect(result.isValid).to.be.true;
     });
 
-    it('debe identificar errores en un usuario con datos inválidos', () => {
+    it('debe identificar errores en un usuario con datos inválidos', async() => {
+        const { expect } = await import('chai');
         const result = validateUserForm(userDataInvalid);
         expect(result.isValid).to.be.false;
         expect(result.errors).to.include.members([
