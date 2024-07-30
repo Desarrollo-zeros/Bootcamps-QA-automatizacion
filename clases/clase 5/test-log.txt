@@ -1,0 +1,8 @@
+2024-07-30T22:07:32.589Z - chromium-------------------------------------------
+2024-07-30T22:07:51.076Z - chromium-------------------------------------------
+2024-07-30T22:08:08.874Z - Project loaded
+2024-07-30T22:08:08.920Z - Clicked "cancel". URL is now https://angular-6-registration-login-example.stackblitz.io/login
+2024-07-30T22:08:08.949Z - Clicked "register". URL is now https://angular-6-registration-login-example.stackblitz.io/register
+2024-07-30T22:08:09.083Z - Clicked "Register" with an empty form. Feedback is shown in 4 elements
+2024-07-30T22:08:16.363Z - Success dialog after creating user with message: Registration successful
+2024-07-30T22:08:23.560Z - Logged in. Your user was successfully created
