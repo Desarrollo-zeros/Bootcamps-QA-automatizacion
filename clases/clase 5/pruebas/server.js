@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // Tu API Key de OpenAI
-const apiKey = '';
+const apiKey = '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';
 
 // Middleware para servir archivos estáticos desde el directorio "public"
 app.use(express.static(path.join(__dirname, 'public')));
